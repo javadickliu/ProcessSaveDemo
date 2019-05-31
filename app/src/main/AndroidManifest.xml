@@ -16,7 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".onepixel.OnePixelActivity"></activity>
+        <activity android:name=".onepixel.OnePixelActivity" />
+
+        <service
+            android:name=".foregroundservice.BackGroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".foregroundservice.AssistService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>
