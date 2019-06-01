@@ -1,5 +1,6 @@
 package com.bnv.liudongxun.processsavedemo;
 
+import android.app.job.JobService;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -9,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import com.bnv.liudongxun.processsavedemo.foregroundservice.BackGroundService;
+import com.bnv.liudongxun.processsavedemo.jobscheduler.JobServiceManager;
 import com.bnv.liudongxun.processsavedemo.onepixel.ActivityManager;
 import com.bnv.liudongxun.processsavedemo.onepixel.OnePixelActivity;
 import com.bnv.liudongxun.processsavedemo.onepixel.ScreenBCListener;
@@ -22,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //    testOnPixel();
         //  Intent.ACTION_TIME_TICK
-        testForeGroundService();
+        //testForeGroundService();
+    //    JobService
+        testJonScheduler();
     }
 
     /**
@@ -63,5 +67,12 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "onServiceDisconnected: ");
             }
         }, BIND_AUTO_CREATE);
+    }
+
+    /**
+     * 使用JonScheduler进行保活
+     */
+    public void testJonScheduler() {
+        new JobServiceManager().startJobScheduler(MainActivity.this);
     }
 }
