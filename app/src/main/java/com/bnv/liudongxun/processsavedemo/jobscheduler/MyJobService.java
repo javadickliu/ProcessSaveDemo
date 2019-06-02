@@ -17,8 +17,12 @@ public class MyJobService extends JobService {
     @Override
     public boolean onStartJob(JobParameters params) {
         //1.onStartJob调用时机
-        //2.JobParameters 对象作用
-        //3.onStartJob返回值的影响
+        //·当我们通过JobScheduler对象设置的JobInfo的条件触发的时候调用
+        //2.onStartJob返回值作用
+        //·如果我们需要在onStartJob开启一个线程执行时耗时任务,那么我们返回true,否者返回false
+        //·如果我们不返回true,有可能我们的耗时任务没执行完JonService就销毁了.
+        //3.JobParameters 对象作用
+
         Log.d(TAG, "onStartJob: ");
         String file=Environment.getExternalStorageDirectory().getPath();
         long time=System.currentTimeMillis();

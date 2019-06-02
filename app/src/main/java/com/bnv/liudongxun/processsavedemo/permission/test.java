@@ -1,0 +1,96 @@
+package com.bnv.liudongxun.processsavedemo.permission;
+
+/**
+ * Created by liudongxun on 2019/6/2.
+ */
+
+public class test {
+    /**
+     * 普通权限不需要用户明确授予即可使用
+     */
+/*    ACCESS_LOCATION_EXTRA_COMMANDS	定位权限
+    ACCESS_NETWORK_STATE	网络状态权限
+    ACCESS_NOTIFICATION_POLICY	通知 APP通知显示在状态栏
+    ACCESS_WIFI_STATE	WiFi状态权限
+    BLUETOOTH	使用蓝牙权限
+    BLUETOOTH_ADMIN	控制蓝牙开关
+    BROADCAST_STICKY	粘性广播
+    CHANGE_NETWORK_STATE	改变网络状态
+    CHANGE_WIFI_MULTICAST_STATE	改变WiFi多播状态，应该是控制手机热点（猜测）
+    CHANGE_WIFI_STATE	控制WiFi开关，改变WiFi状态
+    DISABLE_KEYGUARD	改变键盘为不可用
+    EXPAND_STATUS_BAR	扩展bar的状态
+    GET_PACKAGE_SIZE	获取应用安装包大小
+    INTERNET	网络权限
+    KILL_BACKGROUND_PROCESSES	杀死后台进程
+    MODIFY_AUDIO_SETTINGS	改变音频输出设置
+    NFC	支付
+    READ_SYNC_SETTINGS	获取手机设置信息
+    READ_SYNC_STATS	数据统计
+    RECEIVE_BOOT_COMPLETED	监听启动广播
+    REORDER_TASKS	创建新栈
+    REQUEST_INSTALL_PACKAGES	安装应用程序
+    SET_TIME_ZONE	允许应用程序设置系统时间区域
+    SET_WALLPAPER	设置壁纸
+    SET_WALLPAPER_HINTS	设置壁纸上的提示信息，个性化语言
+    TRANSMIT_IR	红外发射
+    USE_FINGERPRINT	指纹识别
+    VIBRATE	震动
+    WAKE_LOCK	锁屏
+    WRITE_SYNC_SETTINGS	改变设置
+    SET_ALARM	设置警告提示
+    INSTALL_SHORTCUT	创建快捷方式
+    UNINSTALL_SHORTCUT	删除快捷方式*/
+
+
+/**
+ * 危险权限和其权限组
+ */
+/*    CALENDAR:
+    READ_CALENDAR
+    WRITE_CALENDAR
+
+    CALL_LOG:
+    READ_CALL_LOG
+    WRITE_CALL_LOG
+    PROCESS_OUTGOING_CALLS
+
+    CAMERA:
+    CAMERA
+
+    CONTACTS:
+    READ_CONTACTS
+    WRITE_CONTACTS
+    GET_ACCOUNTS
+
+    LOCATION:
+    ACCESS_FINE_LOCATION
+    ACCESS_COARSE_LOCATION
+
+    MICROPHONE:
+    RECORD_AUDIO
+
+    PHONE:
+    READ_PHONE_STATE
+    READ_PHONE_NUMBERS
+    CALL_PHONE
+    ANSWER_PHONE_CALLS
+    ADD_VOICEMAIL
+    USE_SIP
+
+    SENSORS:
+    BODY_SENSORS
+
+    SMS:
+    SEND_SMS
+    RECEIVE_SMS
+    READ_SMS
+    RECEIVE_WAP_PUSH
+    RECEIVE_MMS
+
+    STORAGE:
+    READ_EXTERNAL_STORAGE
+    WRITE_EXTERNAL_STORAGE*/
+
+
+}
